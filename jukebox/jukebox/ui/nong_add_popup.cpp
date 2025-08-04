@@ -534,7 +534,15 @@ void NongAddPopup::setSongType(SongType type, bool memorizePrevious) {
             break;
         }
         case SongType::YOUTUBE: {
-            return;
+            m_specialInput->setString("");
+            m_localSongMenu->setVisible(false);
+            m_specialInfoNode->updateLayout();
+            m_specialInput->getInputNode()->getTextLabel()->setString(
+                "YouTube URL");
+            if (!m_memoizedYoutubeInput.empty()) {
+                m_specialInput->setString(m_memoizedYoutubeInput);
+            }
+            break;
         }
     }
 }
