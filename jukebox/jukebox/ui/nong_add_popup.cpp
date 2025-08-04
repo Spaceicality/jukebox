@@ -783,7 +783,7 @@ geode::Result<> NongAddPopup::addLocalSong(
 geode::Result<> NongAddPopup::addYTSong(
     const std::string& songName, const std::string& artistName,
     const std::optional<std::string> levelName, int offset) {
-    return Err("YouTube songs are coming soon :)");
+    // return Err("YouTube songs are coming soon :)");
 
     constexpr size_t YOUTUBE_VIDEO_ID_SIZE = 11;
 
