@@ -557,7 +557,7 @@ void NongAddPopup::onSwitchToYT(CCObject*) {
     //                      "They will be enabled in a future <cb>update</c> :)",
     //                      "Ok")
     //     ->show();
-    this->setSongType(SongType::YOUTUBE, true);*/
+    this->setSongType(SongType::YOUTUBE, true);
 }
 
 void NongAddPopup::onSwitchToHosted(CCObject*) {
