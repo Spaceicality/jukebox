@@ -336,15 +336,15 @@ Result<> IndexManager::downloadSong(int gdSongID, const std::string& uniqueID) {
         //     "YouTube song downloads will be enabled in a future release!");
         // break;
 
-        Result<DownloadSongTask> t = song->startDownload();
-        if (t.isErr()) {
-            return Err("Failed to start download: {}", err);
-        }
+        // Result<DownloadSongTask> t = song->startDownload();
+        // if (t.isErr()) {
+        //     return Err("Failed to start download: {}", err);
+        // }
         
-        task = t.unwrap();
-        found = true;
-        local = song.get();
-        break;
+        // task = t.unwrap();
+        // found = true;
+        // local = song.get();
+        // break;
     }
 
     if (!found) {
