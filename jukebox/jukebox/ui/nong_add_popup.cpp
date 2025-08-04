@@ -552,12 +552,12 @@ void NongAddPopup::onSwitchToLocal(CCObject*) {
 }
 
 void NongAddPopup::onSwitchToYT(CCObject*) {
-    FLAlertLayer::create("Unavailable",
-                         "YouTube songs are currently <cr>unavailable</c>. "
-                         "They will be enabled in a future <cb>update</c> :)",
-                         "Ok")
-        ->show();
-    /*this->setSongType(SongType::YOUTUBE, true);*/
+    // FLAlertLayer::create("Unavailable",
+    //                      "YouTube songs are currently <cr>unavailable</c>. "
+    //                      "They will be enabled in a future <cb>update</c> :)",
+    //                      "Ok")
+    //     ->show();
+    this->setSongType(SongType::YOUTUBE, true);*/
 }
 
 void NongAddPopup::onSwitchToHosted(CCObject*) {
