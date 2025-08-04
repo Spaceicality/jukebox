@@ -338,7 +338,7 @@ Result<> IndexManager::downloadSong(int gdSongID, const std::string& uniqueID) {
 
         Result<DownloadSongTask> t = song->startDownload();
         if (t.isErr()) {
-            return Err("Failed to start download: {}", t.error());
+            return Err("Failed to start download: {}", err);
         }
         
         task = t.unwrap();
